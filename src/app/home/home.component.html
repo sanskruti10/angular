@@ -1,0 +1,10 @@
+<p>home works!</p>
+<button (click)="getData('Sanskruti')">Click Me</button>
+<br><br>
+<input placeholder="Keyup" #box type="text" (keyup)="getData(box.value)">
+<br><br>
+<input placeholder="Keydown function" #down type="number" (keydown)="getData(down.value)">
+<br>
+<br>
+<input placeholder="blur function" type="text" #blur (blur)="getData(blur.value)">
+<h1 (mouseover)="getData('Here')">Code Review</h1>

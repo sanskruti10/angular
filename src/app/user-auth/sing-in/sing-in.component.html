@@ -1,0 +1,18 @@
+<p>sing-in works!</p>
+<h1 *ngIf="show">Show this code, we are to try to get code</h1>
+<h1>{{title}}</h1>
+<input placeholder="Enter Name" type="text" #san>
+<button (click)="getValue(san.value)" class="heading">Click to Get Value</button>
+<p>Input Value Is Here: {{displayVal}}</p>
+<!-- <input placeholder="Keydown function" #down type="number" (keydown)="getValue(down.value)"> -->
+
+<p class="heading">Counter For Button</p>
+<button (click)="getCount('pluse')"> ++ </button><br><br>
+<p>check: {{count}}</p>
+<button (click)="getCount('minuse')"> -- </button>
+<br>
+<h3>
+    Property Binding & Interpolation
+</h3>
+<p><input type="text" name="user-name" value="{{name}}" disabled="{{disable}}"></p>
+<input type="text" name="user-add" [value]="name" [disabled]="disable">
